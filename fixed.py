@@ -13,7 +13,7 @@ for key in data:
     try:
         res = divider(int(key), data[key])
         result.append(res)
-    except Exception:
-        pass
+    except Exception as e:
+        print(e)
 
 print(result)
